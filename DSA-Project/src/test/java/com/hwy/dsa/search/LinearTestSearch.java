@@ -18,8 +18,7 @@ import org.junit.runners.Parameterized;
 public class LinearTestSearch {
     LinearSearch isAlgo = new LinearSearch();
     int[]input = {1,2,3,4,10,-1};
-    
-    
+       
     @parameterizedTest
     @CsvSource(value = {
             "1,0",
@@ -32,5 +31,25 @@ public class LinearTestSearch {
         
         int index = isAlgo.Search(input, item);
         assertEquals(expected, index);
+    }
+    
+    @parameterizedTest
+    @MethodSource("RectangleAreaProvider")
+    void testRectangleArea(int lenght, int width, int expectedArea)
+    {
+        assertEquals(expectedArea, calculateRectangleArea(length, width));
+    }
+    
+    private static Stream<Arguments> rectangleAreaProvider(){
+        return Stream.of(
+        Arguments.of(1,2,2),
+        Arguments.of(3,4,12),
+        Argguments.of(5,6,30)
+        );     
+    }
+    
+    private int calculateRectangleArea(int length, int width)
+    {
+        return length * width;
     }
 }
