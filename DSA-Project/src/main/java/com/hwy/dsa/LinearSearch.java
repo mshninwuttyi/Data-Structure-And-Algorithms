@@ -9,7 +9,7 @@ package com.hwy.dsa;
  * @author LENOVO
  */
 public class LinearSearch {
-    public int search(int[]array,int item)
+    public int Search(int[]array,int item)
     {
         for (int i = 0; i < array.length; i++) {
             if(array[i]==item)
@@ -23,6 +23,6 @@ public class LinearSearch {
     {
         int[] input = {1,2,3,4,10};
         LinearSearch ls = new LinearSearch();
-        System.out.println("Search "+ ls.search(input, 100));
+        System.out.println("Search "+ ls.Search(input, 100));
     }
 }
