@@ -17,4 +17,12 @@ public class SortingTest {
     sortingAlgo.sort(arr);
     assertTrue(util.isArraySorted(arr));
 }
+    
+    @Test
+    public void testSingleElement()
+    {
+        int[] arr = {3};
+        sortingAlgo.sort(arr);
+        assertTrue(util.isArraySorted(arr));
+    }
 }
