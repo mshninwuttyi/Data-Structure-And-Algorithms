@@ -25,4 +25,10 @@ public class SortingTest {
         sortingAlgo.sort(arr);
         assertTrue(util.isArraySorted(arr));
     }
+    
+    @Test
+    public void testDoubleElement()
+    {
+        
+    }
 }
