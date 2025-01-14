@@ -20,7 +20,7 @@ public class Util {
     {
         Random random = new Random();
         int[] arr = new int[size];
-        for(int i=0;i<arr.length-1;i++)
+        for(int i=0;i<arr.length;i++)
         {
             arr[i] = random.nextInt(400);
         }
@@ -30,7 +30,7 @@ public class Util {
     public String arrayToString(int[] arr)
     {
         StringBuffer buffer = new StringBuffer();
-        for(int i=0;i<arr.length-1;i++)
+        for(int i=0;i<arr.length;i++)
         {
             buffer.append(arr[i]+" ,");
         }

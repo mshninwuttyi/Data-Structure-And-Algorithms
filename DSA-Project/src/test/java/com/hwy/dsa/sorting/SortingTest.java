@@ -1,5 +1,5 @@
 
-package com.turing.dsa.sorting;
+package com.hwy.dsa.sorting;
 
 import com.hwy.dsa.sorting.BubbleSort;
 import com.hwy.dsa.sorting.SortingAlgorithm;
